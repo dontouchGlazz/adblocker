@@ -1,4 +1,4 @@
-chrome.declarativeNetRequest.updateDyanmicRules({
+chrome.declarativeNetRequest.updateDynamicRules({
     addRules: [
         {
             id: 1, 
