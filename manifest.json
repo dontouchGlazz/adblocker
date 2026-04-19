@@ -1,12 +1,24 @@
 {
-  "manifest_version": 3,
-  "name": "epic skibidi adblocker",
-  "version": "1.0",
-  "action": {
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"]
+    "manifest_version": 3,
+    "name": "epic skibidi adblocker",
+    "version": "1.0",
+    "description": "i am on my last straw",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "webRequest", 
+        "webRequestBlocking", 
+        "declarativeNetRequest",
+        "activeTab"
+    ],
+    
+    "host_permission": ["<all_urls>"],
+    
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
 }
