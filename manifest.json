@@ -8,5 +8,5 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage"]
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"]
 }
